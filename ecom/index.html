@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple E-Commerce Website</title>
+  <link rel="stylesheet" href="sty.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+   
+    <div class="tit"><img class="ti" src="img/logo.png"> </div>
+    <div class="logo">Brand Bucket Shirts</div>
+ 
+
+ 
+    <div class="cart" onclick="toggleCart()"> <i class="fa-solid fa-cart-shopping"></i> <span id="cart-count">0</span> items</div>
+  
+  
+  </header>
+  <h1 class="uni">Unique Collections!</h1>
+  <div class="er">
+  <input class="sea" type="search" placeholder="Search...">
+  <h1 class="v"><i class="fa-solid fa-magnifying-glass"></i></h1></div>
+  <h1 class="quote">"The well-dressed man never stands out in a crowd; his elegance sets him apart." - Oscar de la Renta</h1>
+  
+  <main>
+    <section class="products">
+      <div class="product" id="product-1">
+        <img class="h" src="img/shirt/118779312_988056301619016_3010929380074518457_n.jpg">
+        <div class="j"><h3>Gucci premium Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.550</p>
+        <button onclick="addToCart(1, 'Shirt', 550)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product" id="product-2">
+        <img class="h" src="img/shirt/292079862_343820284591422_6841171506330042350_n.webp">
+        <div class="j"><h3>Cotton Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.450</p>
+        <button onclick="addToCart(2, 'Shirt', 450)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/shirt/292169547_447373376895548_4541454980055141756_n.webp">
+        <div class="j"><h3>Textured Cotton</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.450</p>
+        <button onclick="addToCart(3, 'Shirt', 450)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/shirt/337502429_2494380587379938_2934667243446639390_n.webp" >
+        <div class="j"><h3>North Studio Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.550</p>
+        <button onclick="addToCart(3, 'Shirt', 550)">Add to Cart</button>
+      </div>
+      </div>
+    </section>
+  </main>
+  <main>
+    <section class="products">
+      <div class="product" id="product-1">
+        <img class="h" src="img/shirt/337721119_1682234125552753_1568203091367118752_n.webp">
+        <div class="j"><h3>North premium Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.550</p>
+        <button onclick="addToCart(1,'Shirt', 550)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product" id="product-2">
+        <img class="h" src="img/shirt/422106075_2023515231366735_7525487001668821399_n.webp">
+        <div class="j"><h3>Cotton Checked Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.450</p>
+        <button onclick="addToCart(2, 'Shirt', 450)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/shirt/422107892_916435573527642_3408912332601113983_n.webp">
+        <div class="j"><h3>Cotton Checked Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.450</p>
+        <button onclick="addToCart(3, 'Shirt', 450)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/shirt/422191922_351453417741421_8646872036809552241_n.webp" >
+        <div class="j"><h3>Textured Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.450</p>
+        <button onclick="addToCart(3, 'Shirt', 450)">Add to Cart</button>
+      </div>
+      </div>
+    </section>
+  </main>
+  <main>
+    <section class="products">
+      <div class="product" id="product-1">
+        <img class="h" src="img/shirt/422605621_2452626198278187_422204550930745231_n.webp">
+        <div class="j"><h3>Cotton Checked Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.450</p>
+        <button onclick="addToCart(1, 'Shirt', 450)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product" id="product-2">
+        <img class="h" src="img/shirt/422935242_406176348421847_7124068223435639557_n.webp">
+        <div class="j"><h3>Cotton Checked Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.450</p>
+        <button onclick="addToCart(2, 'Shirt', 450)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/shirt/425437837_386533293978116_7310807409377452484_n.webp">
+        <div class="j"><h3>North Studio Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.550</p>
+        <button onclick="addToCart(3, 'Shirt', 550)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/shirt/425859767_1576310723145374_6256598968903742125_n.webp" >
+        <div class="j"><h3>North Studio Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.550</p>
+        <button onclick="addToCart(3, 'Shirt', 550)">Add to Cart</button>
+      </div>
+      </div>
+    </section>
+  </main>
+  <main>
+    <section class="products">
+      <div class="product" id="product-1">
+        <img class="h" src="img/shirt/442222931_2067078953677650_8484478279367195535_n.webp">
+        <div class="j"><h3>Printed Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.400</p>
+        <button onclick="addToCart(1, 'Shirt', 400)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product" id="product-2">
+        <img class="h" src="img/shirt/429669095_1764138657419050_8581725242084691369_n.webp">
+        <div class="j"><h3>checked Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.500</p>
+        <button onclick="addToCart(2, 'Shirt', 500)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/shirt/429673449_1908854749551042_4189946465797752293_n.webp">
+        <div class="j"><h3>Checked Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.500</p>
+        <button onclick="addToCart(3, 'Shirt', 500)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/shirt/441024505_3652997725029814_941989491521587998_n.webp" >
+        <div class="j"><h3>Printed Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.400</p>
+        <button onclick="addToCart(3, 'Shirt', 400)">Add to Cart</button>
+      </div>
+      </div>
+    </section>
+  </main>
+  <main>
+    <section class="products">
+      <div class="product" id="product-1">
+        <img class="h" src="img/shirt/455899193_1209211210415094_3176612024256582609_n.webp">
+        <div class="j"><h3>Jungle Jean Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.550</p>
+        <button onclick="addToCart(1, 'Shirt', 550)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product" id="product-2">
+        <img class="h" src="img/shirt/455963869_496294723304156_413346448971835422_n.webp">
+        <div class="j"><h3>North Studio Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.550</p>
+        <button onclick="addToCart(2, 'Shirt', 550)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/shirt/441037324_1895106014264543_4098426574950684656_n.webp">
+        <div class="j"><h3>Designed Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.400</p>
+        <button onclick="addToCart(3, 'Shirt', 400)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/shirt/457171673_18275086381242683_2552642553296121045_n.jpg" >
+        <div class="j"><h3>SOME Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.450</p>
+        <button onclick="addToCart(3, 'Shirt', 450)">Add to Cart</button>
+      </div>
+      </div>
+    </section>
+  </main>
+  <h1 class="name">In the name of trust!</h1>
+   <div class="jk">
+    <a class="df" href="2.html">Next</a>
+   </div>
+   <div class="end">
+    <h1 class="na">Brand Bucket Shirts | Papanasam | Kumbakonam</h1>
+    <h1 class="ins"> <a class="inss" href="https://www.instagram.com/brand_bucket_shirtss?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@Brand_Bucket_Shirts</a> | +91 7558141317</h1>
+   </div>
+  
+  <div id="cart" class="cart-popup">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <p>Total: RS.<span id="total-price">0</span></p>
+    <button onclick="checkout()">Proceed to Checkout</button>
+    <button onclick="toggleCart()">Close</button>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

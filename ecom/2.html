@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple E-Commerce Website</title>
+  <link rel="stylesheet" href="sty.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    
+    <div class="tit"><img class="ti" src="img/logo.png"> </div>
+    <div class="logo">Brand Bucket Shirts</div>
+ 
+ 
+    <div class="cart" onclick="toggleCart()"><i class="fa-solid fa-cart-shopping"></i> <span id="cart-count">0</span> items</div>
+  
+  
+  </header>
+  <h1 class="uni">Unique Collections!</h1>
+  <div class="er">
+    <input class="sea" type="search" placeholder="Search...">
+    <h1 class="v"><i class="fa-solid fa-magnifying-glass"></i></h1></div>
+  <h1 class="quote">"The well-dressed man never stands out in a crowd; his elegance sets him apart." - Oscar de la Renta</h1>
+  
+  <main>
+    <section class="products">
+      <div class="product"  id= Some >
+        <img class="h" src="img/shirt/457171673_18275086381242683_2552642553296121045_n.jpg">
+        <div class="j"><h3>SOME premium Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.550</p>
+        <button onclick="addToCart(1, 'Shirt' , 550)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product" id="product-2">
+        <img class="h" src="img/shirt/457147803_18275086390242683_2596535149571007787_n.jpg">
+        <div class="j"><h3>SOME Premium Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.450</p>
+        <button onclick="addToCart(2, 'Shirt', 450)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/pant/118291842_151178339968104_4559302891114042931_n.jpg">
+        <div class="j"><h3>Cotton Track</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.300</p>
+        <button onclick="addToCart(3, 'Track', 300)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/pant/118297568_2361289584180215_541118569070791812_n.jpg" >
+        <div class="j"><h3>Cotton Track</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.300</p>
+        <button onclick="addToCart(3,'Track', 300)">Add to Cart</button>
+      </div>
+      </div>
+    </section>
+  </main>
+  <main>
+    <section class="products">
+      <div class="product" id="product-1">
+        <img class="h" src="img/pant/118460923_1021052894979632_6060407714620847454_n.jpg">
+        <div class="j"><h3>Cotton Track</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.300</p>
+        <button onclick="addToCart(1, 'Track', 300)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product" id="product-2">
+        <img class="h" src="img/pant/153066153_102717301829797_4709105723534022624_n.jpg">
+        <div class="j"><h3>Cotton Pant</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.600</p>
+        <button onclick="addToCart(2, 'Pant', 600)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/pant/154367762_145323097358303_4114651857647527746_n.jpg">
+        <div class="j"><h3>Cotton Pant</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.600</p>
+        <button onclick="addToCart(3, 'Pant', 600)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/pant/154802147_177993767196860_8369420961125434469_n.jpg" >
+        <div class="j"><h3>Cotton Pant</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.600</p>
+        <button onclick="addToCart(3, 'Pant', 600)">Add to Cart</button>
+      </div>
+      </div>
+    </section>
+  </main>
+  <main>
+    <section class="products">
+      <div class="product" id="product-1">
+        <img class="h" src="img/pant/155016663_717638125586823_8023945641708892081_n.jpg">
+        <div class="j"><h3>Cotton Pant</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.600</p>
+        <button onclick="addToCart(1, 'Pant', 600)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product" id="product-2">
+        <img class="h" src="img/pant/219781125_506690187070474_2045008746186854405_n.jpg">
+        <div class="j"><h3>Shorts</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.200</p>
+        <button onclick="addToCart(2, 'shorts', 200)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/pant/220148977_805352250157921_8231961965540017393_n.jpg">
+        <div class="j"><h3>Shorts</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.200</p>
+        <button onclick="addToCart(3, 'Shorts', 200)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/pant/228288240_1202800266871806_936109083001934231_n.jpg" >
+        <div class="j"><h3>Shorts(Pack of 3)</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.550</p>
+        <button onclick="addToCart(3, 'Pack', 550)">Add to Cart</button>
+      </div>
+      </div>
+    </section>
+  </main>
+  <main>
+    <section class="products">
+      <div class="product" id="product-1">
+        <img class="h" src="img/pant/235419399_1544093489255158_6504134343539214267_n.jpg">
+        <div class="j"><h3>Lycra Pant</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.400</p>
+        <button onclick="addToCart(1, 'Pant', 400)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product" id="product-2">
+        <img class="h" src="img/pant/244332204_449235303145340_1855226526042632402_n.webp">
+        <div class="j"><h3>Men Wallet</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.300</p>
+        <button onclick="addToCart(2, 'Accesories', 300)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/pant/284974201_2136831896480746_8447402822851870981_n.webp">
+        <div class="j"><h3>Lycra Pant(Pack of 3)</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.999</p>
+        <button onclick="addToCart(3, 'Pack', 999)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/tees/272057613_485245193033691_6983031262085262340_n.webp" >
+        <div class="j"><h3>Jersey T-Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.300</p>
+        <button onclick="addToCart(3, 'T-shirt', 300)">Add to Cart</button>
+      </div>
+      </div>
+    </section>
+  </main>
+  <main>
+    <section class="products">
+      <div class="product" id="product-1">
+        <img class="h" src="img/tees/272084630_366893241911372_5919763603079197664_n.webp">
+        <div class="j"><h3>Jersey T-Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.300</p>
+        <button onclick="addToCart(1, 'T-shirt', 300)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product" id="product-2">
+        <img class="h" src="img/tees/272155771_949520975688425_5833988303930608450_n.webp">
+        <div class="j"><h3>Jersey T-Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.300</p>
+        <button onclick="addToCart(2, 'T-shirt', 300)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/tees/272280058_470277564638488_5934832287732897743_n.webp">
+        <div class="j"><h3>Jersey T-Shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.300</p>
+        <button onclick="addToCart(3, 'T-shirt', 300)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="product" id="product-3">
+        <img class="h" src="img/tees/291398265_440103294368706_2505784182332344376_n.webp" >
+        <div class="j"><h3>Popcorn T-shirt</h3>
+        <h4>Size:M/L/XL/XXL</h4>
+        <p>Rs.350</p>
+        <button onclick="addToCart(3, 'T-shirt', 350)">Add to Cart</button>
+      </div>
+      </div>
+    </section>
+  </main>
+  <h1 class="name">In the name of trust!</h1>
+   
+   <div class="er">
+    <div class="fg">  <a class="dfg" href="index.html">Previous</a> </div> <div class="jhkk">
+        <a class="dff" href="3.html">Next</a>
+       </div>
+    
+</div>
+   <div class="end">
+    <h1 class="na">Brand Bucket Shirts | Papanasam | Kumbakonam</h1>
+    <h1 class="ins"> <a class="inss" href="https://www.instagram.com/brand_bucket_shirtss?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@Brand_Bucket_Shirts</a> | +91 7558141317</h1>
+   </div>
+  
+  <div id="cart" class="cart-popup">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <p>Total: $<span id="total-price">0</span></p>
+    <button onclick="checkout()">Proceed to Checkout</button>
+    <button onclick="toggleCart()">Close</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
